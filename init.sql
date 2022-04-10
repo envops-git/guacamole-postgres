@@ -1,2 +1,0 @@
-CREATE USER postgres;
-GRANT ALL PRIVILEGES TO postgres;
