@@ -1,5 +1,3 @@
-Dockerfile
 .gitignore
 .git
-.dockerignore
-psql_init.sh
+
