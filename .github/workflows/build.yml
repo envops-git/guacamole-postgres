@@ -2,8 +2,8 @@ name: Build postgres image
 
 on:
   push:
-    branches: 
-    - 'master'
+    branches:
+      - "master"
 
 env:
   REGISTRY: ghcr.io
@@ -32,7 +32,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          ref: 'master'
+          ref: "master"
 
       - name: Log in to the github container registry
         uses: docker/login-action@master
