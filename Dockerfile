@@ -8,4 +8,4 @@ WORKDIR /main/
 
 # COPY psql_init.sh /docker-entrypoint-initdb.d
 
-RUN su - postgres
+CMD ["su", "postgres"]
