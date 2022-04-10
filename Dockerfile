@@ -4,4 +4,6 @@ ENV POSTGRES_USER postgres
 
 ENV POSTGRES_DB postgres
 
-COPY initdb.sql /docker-entrypoint-initdb.d
+COPY psql_init.sh /docker-entrypoint-initdb.d
+
+COPY pg_backup.bak /docker-entrypoint-initdb.d
